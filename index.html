@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="navbar flex flex-col lg:flex-row bg-base-100 text-center bg-sky-200 p-3 rounded-lg w-9/12 mx-auto mt-10">
+        <div class=" w-9/12 lg:ml-44 text-center ml-10 mb-10">
+          <a class=" text-xl"><span class="lg:text-5xl text-lg  font-semibold">Interactive</span> 
+            <br>
+            <br> Geometry Genius</a>
+        </div>
+        <div class="flex-none">
+          <button class="btn btn-primary px-3">
+            Blog
+          </button>
+        </div>
+      </div>
+                      
+             
+    <div class=" grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2">
+                   
+        <div class="card w-96 bg-base-100 shadow-xl mt-10">
+            <figure><img src="/images/triangle.png" alt="Shoes" /></figure>
+            <div class="card-body text-center">
+              <h2 class="text-lg font-semibold">Triangle</h2>
+              <p>Area = 0.5 x B x H</p>
+                
+             <div class="flex">
+                <p class="flex gap-">
+                    <input  class="bg-slate-200 w-28 px-3" placeholder="B" type="number" name="" id="input-base">
+                    cm
+                  </p>
+                  <p class="flex gap-">
+                    <input  class="bg-slate-200 w-28 px-3" placeholder="H" type="number" name="" id="input-height">
+                    cm
+                  </p>
+             </div>
+                
+              <p>Area:<span id="Area-Triangle"></span></p>
+    
+              <div class="mt-5">
+                <button id="btn-calculation-first" class="btn btn-primary  w-full">Calculation</button>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        <div class="card w-96 bg-base-100 shadow-xl mt-10">
+            <figure><img src="/images/rectangle.png" alt="Shoes" /></figure>
+            <div class="card-body text-center">
+              <h2 class="text-lg font-semibold">rectangle</h2>
+              <p>Area =W x L</p>
+             <div class="flex">
+                <p class="flex gap-">
+                    <input  class="bg-slate-200 w-28 px-3" placeholder="W" type="number" name="" id="input-Width">
+                    cm
+                  </p>
+                  <p class="flex gap-">
+                    <input  class="bg-slate-200 w-28 px-3" placeholder="L" type="number" name="" id="input-Length">
+                    cm
+                  </p>
+             </div>
+                
+              <p>Area:<span id="Area-rectangle"></span></p>
+    
+              <div class="mt-5">
+                <button id="btn-calculation-Second" class="btn btn-primary  w-full">Calculation</button>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        <div class="card w-96 bg-base-100 shadow-xl mt-10">
+            <figure><img src="/images/parallelogram.png" alt="Shoes" /></figure>
+            <div class="card-body text-center">
+              <h2 class="text-lg font-semibold">parallelogram</h2>
+              <p>Area =  B x H</p>
+                
+             <div class="flex">
+                <p class="flex gap-">
+                    <input  class="bg-slate-200 w-28 px-3" placeholder="B" type="number" name="" id="input-Base">
+                    cm
+                  </p>
+                  <p class="flex gap-">
+                    <input  class="bg-slate-200 w-28 px-3" placeholder="H" type="number" name="" id="input-Height">
+                    cm
+                  </p>
+             </div>
+                
+              <p>Area:<span id="Area-parallelogram"></span></p>
+    
+              <div class="mt-5">
+                <button id="btn-calculation-third" class="btn btn-primary  w-full">Calculation</button>
+              </div>
+            </div>
+          </div>
+
+
+                <div id="Area-Calculation" class="card w-96 bg-base-100  mt-10 h-64">
+                    <h1 class="text-xl font-medium text-center mt-3 underline">Area Calculated History</h1>
+
+                    <div id="Area-Calculation-history">
+                              
+                    </div>
+                </div>
+    </div>
+
+    <div class="flex justify-center mt-20 p-3 font-semibold">
+        <button class="btn btn-warning " id="btn-reset">Reset</button>
+    </div>
+
+
+
+
+
+
+
+           <script src="./index.js"></script>
+</body>
+</html>
